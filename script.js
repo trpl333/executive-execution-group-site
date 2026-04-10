@@ -16,7 +16,7 @@
   if (toggle && links) {
     toggle.addEventListener('click', function () {
       const open = links.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-expanded', open);
       document.body.style.overflow = open ? 'hidden' : '';
     });
 
@@ -29,6 +29,10 @@
       });
     });
   }
+
+  /* ── copyright year ── */
+  var yearEl = document.getElementById('year');
+  if (yearEl) { yearEl.textContent = new Date().getFullYear(); }
 
   /* ── contact form submission ── */
   const form = document.getElementById('contact-form');
