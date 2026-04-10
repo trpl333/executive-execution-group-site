@@ -1,4 +1,4 @@
-import johnPhoto from "../../../../assets/John.jpg";
+import johnPhoto from "../../../assets/John.jpg";
 
 export default function About() {
   return (
